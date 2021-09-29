@@ -1,0 +1,134 @@
+.slide-13{
+  @extend %flex;
+  flex-direction: column;
+  align-items: center;
+ padding: 0 1rem;
+}
+.slide-13-text{
+  padding: 22.8rem 0 13rem 0;
+}
+.slide-13__text{
+  font-family: 'Gilroy', sans-serif;
+  @include font(4.2rem,5rem, 400);
+  text-align: center;
+}
+.slide-13-text_span{
+  display: block;
+  @include font(4.6rem,5.5rem, 400);
+  text-transform: uppercase;
+}
+.slide-13-contacts{
+  padding: 13.5rem 0 1rem 0;
+}
+.slide-13__contacts{
+  @extend %flex;
+  column-gap: 10px;
+}
+.slide-13__phone{
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  margin-right: 8px;
+  background-image: url(../assets/images/icons/Phone_ico.svg);
+  @extend %bg-image;
+}
+.slide-13__link{
+  font-family: 'Gilroy', sans-serif;
+  @include font(3.2rem , 3.7rem, 400);
+  color: $Font-snow;
+}
+.slide-13__line{
+  display: inline-block;
+  background-color: $Font-snow;
+  width: 2px;
+  height:2.2rem;
+  margin: 0 1rem;
+}
+.slide-13-mail{
+  @extend %relative;
+  top: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  background-image: url(../assets/images/icons/Mail_ico.svg);
+  @extend %bg-image;
+}
+.slide-13-web{
+  @extend %relative;
+  top: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+  background-image: url(../assets/images/icons/Web_ico.svg);
+  @extend %bg-image;
+}
+.slide-13__contacts_bottom{
+  justify-content: center;
+  column-gap: 50px;
+  padding-top: 4rem;
+}
+
+@media(max-width:1680px){
+  .slide-13-text{
+    padding: 14rem 0 8rem 0;
+  }
+}
+@media(max-width:1400px){
+  .slide-13__link{
+    @include font(2.7rem , 6.2rem, 400);
+  }
+  .slide-13__text{
+    @include font(3.6rem, 4.2rem, 400);
+  }
+  .slide-13-text_span{
+    @include font(4rem,4.9rem, 400);
+  }
+}
+@media(max-width:600px){
+  .slide-13__phone{
+    width: 12px;
+  height: 12px;
+    background-image: url(../assets/images/media/mobile/svg/Phone_ico.svg);
+  }
+  .slide-13-mail{
+    top: 5px;
+    width: 13px;
+    height: 14px;
+    background-image: url(../assets/images/media/mobile/svg/Mail_ico.svg);
+  }
+  .slide-13-web{
+    width: 14px;
+    height: 14px;
+    background-image: url(../assets/images/media/mobile/svg/Web_ico.svg);
+  }
+  .slide-13-text {
+    padding: 11rem 2rem 8rem 2rem;
+}
+
+.slide-13__text{
+  @include font(1.6rem, 2.2rem, 400);
+}
+.slide-13-text_span{
+  @include font(1.6rem, 2.2rem, 400);
+}
+.slide-13_space{
+  display: none;
+}
+
+.slide-13__link{
+  @include font(1.5rem, 1.9rem, 400);
+}
+.slide-13-contacts{
+ padding: 7rem 0 11rem 0;
+}
+.slide-13__contacts{
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 1rem;
+}
+.slide-13__line {
+  height: 1.2rem;
+}
+}

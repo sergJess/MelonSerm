@@ -1,0 +1,29 @@
+.slide-10-logotypes{
+  flex-wrap: wrap;
+  row-gap: 10px;
+  padding: 5.8rem 12rem 5.1rem 12rem;
+}
+.slide-10-text{
+  padding:0 29rem 0 12rem;
+  color: $Font-dark;
+}
+@media(max-width:1400px){
+  .slide-10-logotypes{
+    padding: 5.2rem 9rem 5.1rem 9rem;
+  }
+}
+@media(max-width:800px){
+  .slide-10-text {
+    padding: 0 1rem 0 6rem;
+}
+
+}
+
+@media(max-width:600px){
+  .slide-10-logotypes {
+    padding: 1rem 2rem 2rem 2rem;
+}
+.slide-10-text {
+  padding: 0 2rem 0 2rem;
+}
+}

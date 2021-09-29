@@ -1,0 +1,31 @@
+.slide-5{
+  padding: 37.413rem 14.5rem 1rem 12rem;
+}
+.slide-5__text{
+  @include font(12.2rem, 13.4rem, 500);
+  @extend %letter-spacing;
+  text-transform: uppercase;
+}
+.slide-5-image{
+  align-self: flex-end;
+  margin:5rem 3rem 0 0;
+}
+@media(max-width:1680px){
+  .slide-5{
+    padding: 24rem 3rem 1rem 8rem;
+  }
+}
+@media(max-width:1400px){
+  .slide-5__text{
+    @include font(8.2rem, 9.4rem, 500);
+  }
+}
+@media(max-width:600px){
+  .slide-5{
+    row-gap: 2rem;
+    padding: 14.3rem 2rem 1rem 2rem;
+  }
+  .slide-5__text{
+    @include font(3.5rem, 4.2rem, 500);
+  }
+}

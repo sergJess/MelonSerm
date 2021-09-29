@@ -1,0 +1,138 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    @extend %relative;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $primaryFont;
+    background-color: $Font-snow;
+    color: $Font-snow;
+}
+
+button {
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.slide{
+    min-height: 1080px;
+    overflow-x: hidden;
+}
+.dark-bg{
+    background-color: $Background-dark;
+}
+.blood-bg{
+    background-color: $Font-red;
+}
+.prime-text{
+   color: $Font-dark; 
+}
+.text-red{
+    color: $Font-red;
+}
+.blood-figure{
+    width: 32px;
+    height: 68px;
+    border-radius: 24px;
+    background-color: $Font-red;
+}
+.base-info-text{
+    @include font(3.8rem, 4.4rem, 400);
+}
+
+@media(max-width:1400px){
+    .base-info-text{
+        @include font(2.8rem, 3.4rem, 400);
+    }
+    .container {
+        max-width: 100vw;
+    }
+    .slide{
+        min-height: 800px;
+    }
+}
+@media(max-width:1100px){
+    :root{
+        font-size: 7.5px;
+    }
+}
+@media(max-width:1000px){
+    .slide{
+        min-height: 600px;
+    }
+    .blood-figure{
+        width: 20px;
+        height: 50px;
+        border-radius: 18px;
+    }
+}
+
+@media(max-width:800px){
+    :root{
+        font-size: 7px;
+    }
+}
+@media(max-width:600px){
+    :root{
+        font-size: 10px;
+    }
+    .slide{
+        min-height: 568px;
+    }
+    .blood-figure{
+        width: 10px;
+        height: 20px;
+        border-radius: 6px;
+    }
+    .base-info-text{
+        @include font(1.6rem, 1.8rem, 400);
+    }
+
+}

@@ -1,0 +1,47 @@
+.slide-3{
+  padding: 37.8rem 28.4rem 1rem 12rem;
+}
+.slide-3-content{
+  margin-top:3rem;
+}
+.slide-3-text{
+  @include font(12rem, 13.8rem, 400);
+  @extend %letter-spacing;
+}
+
+.slide-3-text-2{
+  @include font(14.3rem, 16.445rem, 500);
+  letter-spacing:1%;
+  text-transform: uppercase;
+}
+@media(max-width:1680px){
+  .slide-3{
+    padding: 24rem 3rem 1rem 8rem;
+  }
+}
+@media(max-width:1400px){
+  .slide-3-text{
+    @include font(7rem, 11rem, 400);
+  }
+  .slide-3-text-2{
+    @include font(11rem, 14rem, 500);
+  }
+}
+@media(max-width:600px){
+  .slide-3{
+    padding: 15rem 2rem 1rem 2rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 11.2rem;
+  }
+  .slide-3-text{
+    @include font(2.5rem, 2.8rem, 400);
+  }
+  .slide-3-text-2{
+    @include font(3.3rem, 3.7rem, 500);
+  }
+  .slide-3-image{
+    align-self: flex-end;
+    margin-right: 3rem;
+  }
+}

@@ -1,0 +1,23 @@
+.slide-6{
+  padding: 36rem 12.5rem 1rem 12rem;
+}
+.slide-6-image{
+  align-self: flex-end;
+  margin-top: 3.4rem;
+}
+@media(max-width:1680px){
+  .slide-6{
+    padding: 24rem 3rem 1rem 8rem;
+  }
+}
+@media(max-width:1400px){
+  .slide-6-image{
+    margin-top: 2.8rem;
+  }
+}
+@media(max-width:600px){
+  .slide-6{
+    row-gap: 7rem;
+    padding: 14.3rem 2rem 1rem 2rem;
+  }
+}

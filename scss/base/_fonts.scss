@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: local("Gilroy Regular"), url(../assets/fonts/Gilroy/Gilroy-Regular.woff) format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local("Gilroy SemiBold"), url(../assets/fonts/Gilroy/Gilroy-SemiBold.woff) format('woff');
+  font-weight: 600;
+}
+
+@font-face{
+  font-family: 'Eastman';
+  src: local('Eastman'), url(../assets/fonts/Eastman/Eastman-Alternate-Light-trial.ttf) format('opentype');
+  font-weight: 300;
+}
+@font-face{
+  font-family: 'Eastman';
+  src: local('Eastman'), url(../assets/fonts/Eastman/Eastman-Alternate-Regular-trial.ttf) format('opentype');
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Eastman';
+  src: local('Eastman'), url(../assets/fonts/Eastman/Eastman-Alternate-Medium-trial.ttf) format('opentype');
+  font-weight: 500;
+}
+@font-face{
+  font-family: 'Source Sans Pro';
+  src: local('Source Sans Pro'), url(../assets/fonts/Source-Sans/SourceSansPro-Light.ttf) format('opentype');
+  font-weight: 300;
+}

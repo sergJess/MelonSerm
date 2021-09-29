@@ -1,0 +1,46 @@
+.slide-4{
+  padding: 38.5rem 14.7rem 1rem 12rem;
+}
+
+.slide-4__text{
+  @include font(12rem, 14.4rem, 400);
+  @extend %letter-spacing;
+}
+.slide-4__text-2{
+  @include font(14.3rem, 16.445rem, 500);
+  @extend %letter-spacing;
+  text-transform: uppercase;
+}
+.slide-4-image{
+  margin-right: 4rem;
+  align-self: flex-end;
+}
+@media(max-width:1680px){
+  .slide-4{
+    padding: 24rem 4rem 1rem 8rem;
+  }
+}
+
+@media(max-width:1400px){
+  .slide-4__text{
+    @include font(8rem, 10.4rem, 400);
+  }
+  .slide-4__text-2{
+    @include font(10.3rem, 12.445rem, 500);
+  }
+}
+@media(max-width:600px){
+  .slide-4{
+    row-gap: 6.1rem;
+    padding: 14.3rem 2rem 1rem 2rem;
+  }
+  .slide-4__text{
+    @include font(2.8rem, 3.4rem, 400);
+  }
+  .slide-4__text-2{
+    @include font(3.5rem, 4.2rem, 500);
+  }
+  .slide-4-image{
+    margin-right: 0;
+  }
+}

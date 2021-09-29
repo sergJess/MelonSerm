@@ -1,0 +1,38 @@
+.slide-11-images{
+  @extend %flex;
+  justify-content: center;
+  column-gap: 3.6rem;
+}
+.slide-11-social{
+  padding: 5rem 22.2rem 0 20rem;
+}
+.slide-11__text{
+  padding: 4.8rem 0 0 0;
+  text-align: center;
+  color:$Font-dark;
+}
+.slide-11__text-2{
+  padding: 3rem 0 0 0; 
+  text-align: center;
+  color:$Font-dark;
+}
+.slide-loop{
+  @extend %flex;
+  justify-content: center;
+}
+.slide-11-span{
+  font-family: 'Gilroy', sans-serif;
+  text-transform: uppercase;
+}
+@media(max-width:1680px){
+  .slide-11-social{
+    padding: 5rem 12rem 0 12rem;
+  }
+}
+@media(max-width:600px){
+  .slide-11-social {
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+}

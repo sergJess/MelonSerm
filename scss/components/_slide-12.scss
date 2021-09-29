@@ -1,0 +1,131 @@
+.slide-12{
+  padding: 11.5rem 1rem 1rem 12rem;
+  background-image:url(../assets/images/slides/Slide-2.jpg);
+  @extend %bg-image;
+}
+.slide-12-title{
+  @include font(8.4rem, 9.2rem, 500);
+  text-transform: uppercase;
+  color:$Font-red;
+}
+.slide-12-span{
+  display: block;
+  text-transform: lowercase;
+  font-weight: 400;
+  color:$Font-dark;
+}
+.slide-12-line{
+  display: inline-block;
+  @extend %relative;
+  padding-left: 31rem;
+}
+.slide-12-line::before{
+ @extend %pseudo-elem;
+  width: 27.7rem;
+  height: 0.9rem;
+  background-color: $Font-red;
+left: 0;
+top: 50%;
+transform:translateY(-55%);
+}
+.slide-12-list{
+  padding: 14.5rem 0 13rem 0;
+}
+.slide-12__list{
+  @extend %relative;
+  padding: 2rem 0 2rem 3.4rem;
+  @include font(4.8rem, 5.6rem, 400);
+  color:$Font-dark;
+}
+.slide-12__list::before{
+  @extend %pseudo-elem;
+  width: 2.4rem;
+  height: 0.4rem;
+  background-color: $Font-red;
+left: 0;
+top: 50%;
+transform:translateY(-55%);
+}
+.slide-12-text-end{
+  padding-right: 8.4rem;
+}
+.slide-12__text-end{
+  padding-top: 1.6rem;
+  @include font(3.6rem, 4.1rem, 400);
+  color:$Font-dark;
+}
+.slide-12-span-end{
+  display: inline-block;
+  font-family: 'Gilroy', sans-serif;
+  text-transform: uppercase;
+  color: $Font-red;
+}
+@media(max-width:1680px){
+  .slide-12{
+    padding: 8rem 1rem 1rem 8rem;
+   
+  }
+}
+@media(max-width:1400px){
+  .slide-12{
+    background-image:url(../assets/images/media/1400/slide-2.jpg);
+  }
+  .slide-12-title{
+    @include font(5.6rem, 6.4rem, 500);
+  }
+  .slide-12-list {
+    padding: 8.5rem 0 10rem 0;
+}
+  .slide-12__list{
+    @extend %relative;
+    @include font(3.2rem, 4.4rem, 400);
+    
+  }
+  .slide-12__text-end{
+    @include font(3rem, 3.3rem, 400);
+  }
+  .slide-12-line::before{
+     height: 0.6rem;
+   }
+   .slide-12__list::before{
+    height: 2px;
+  }
+}
+@media(max-width: 600px){
+  .slide-12 {
+    padding: 11.5rem 2rem 2.5rem 2rem;
+    background-image: url(../assets/images/media/mobile/slide-2.jpg);
+}
+  .slide-12-title{
+    @include font(2.8rem, 3.7rem, 500);
+  }
+  .slide-12-line{
+   
+    padding-left: 7.4rem;
+  }
+  .slide-12-line::before{
+    height: 0.3rem;
+    width: 6rem;
+  }
+  .slide-12-list {
+    padding: 7.5rem 0 6rem 0;
+}
+  .slide-12__list {
+    @include font(1.5rem, 1.8rem, 400);
+  }
+  .slide-12__list::before {
+    width: 1.6rem;
+  }
+  .slide-12-text-end {
+    position: relative;
+    padding-right: 0;
+  }
+  .slide-12__text-end {
+      @include font(1.4rem, 1.7rem, 400);
+  }
+  .slide-12__blood-figure{
+position: absolute;
+bottom: 0;
+right: -1.5rem;
+  }
+}

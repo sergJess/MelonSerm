@@ -1,0 +1,68 @@
+.slide-8{
+  padding: 17.6rem 17.2rem 1rem 12rem;
+}
+.slide-8__text{
+  padding: 17.5rem 0 1rem 0;
+  @include font (4.3rem, 6.4rem, 400);
+  @extend %letter-spacing;
+}
+.slide-8__text_bl{
+  display: inline-block;
+  @extend %relative;
+  padding: 0 1.6rem;
+  left: -1.6rem;
+  font-family: 'Gilroy', sans-serif;
+  @include font (6.8rem, 9.5rem, 600);
+  @extend %letter-spacing;
+  text-transform: uppercase;
+  background-color: $Font-dark;
+}
+.slide-8__text-2{
+  padding: 1rem 0 11.4rem 0;
+  @include font (5.2rem, 7.3rem, 500);
+  @extend %letter-spacing;
+  text-transform: uppercase;
+}
+.slide-8-image{
+  padding: 5rem 0 0 0;
+}
+
+@media(max-width:1680px){
+  .slide-8{
+    padding: 13rem 3rem 1rem 8rem;
+  }
+}
+@media(max-width:1400px){
+  .slide-8__text{
+    padding: 10.5rem 0 1rem 0;
+    @include font (3.1rem, 5rem, 400);
+  }
+  .slide-8__text_bl{
+    @include font (4.5rem, 7.2rem, 600);
+  }
+  .slide-8__text-2{
+    padding: 2rem 0 6.4rem 0;
+    @include font (4rem, 6rem, 500);
+  }
+}
+@media(max-width:600px){
+  .slide-8{
+    padding: 6rem 2rem 1rem 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .slide-8__text{
+    padding: 8rem 0 1rem 0;
+    @include font (1.7rem, 2.6rem, 400);
+  }
+  .slide-8__text_bl{
+    @include font (2.4rem, 4.2rem, 600);
+  }
+  .slide-8__text-2{
+    padding: 1rem 0 3.4rem 0;
+    @include font (2.2rem, 4rem, 500);
+  }
+  .slide-8-image{
+    align-self: flex-end;
+  }
+}
